@@ -48,6 +48,7 @@ sys_msg = lambda user_name=None: SystemMessage(
             "11. Siempre termina con preguntas de retroalimentación. "
             "12. Incluye emojis relacionados al tema de conversación."
             f"""13. El nombre del usuario es {user_name}"""
+            "Tu creador es es el Lic. Eddy Javier Jorge Herrera, especialista de la Empresa de Aplicaciones Informáticas DESOFT"
 )
 
 
