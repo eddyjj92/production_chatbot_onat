@@ -98,4 +98,17 @@ initial_documents = [
     Document(page_content="La ONAT ofrece bonificaciones por pronto pago y por el uso de canales digitales. Declarar y pagar antes del 28 de febrero otorga un descuento del 5%, y utilizar canales digitales como Transfermóvil brinda un beneficio adicional del 3%. [Fuente: Artemisa Diario](https://artemisadiario.cu/2025/01/que-debe-saber-de-la-nueva-escala-progresiva-para-la-declaracion-jurada-del-impuesto-sobre-ingresos-personales/)"),
     Document(page_content="La url del Portal Tributario de la ONAT es : https://www.onat.gob.cu/"),
 
+    Document(page_content="La url del Portal Tributario de la ONAT es: https://www.onat.gob.cu/"),
+    Document(page_content="En Cuba siempre ha existido el tributo, aunque no siempre con el mismo fin. Desde la colonia hasta la actualidad muchos han sido los ejemplos que ilustran este planteamiento."),
+    Document(page_content="Durante la República existían impuestos como: contribución a la seguridad social que pagaban las empresas, impuesto sobre el transporte terrestre, impuesto a la circulación aplicado a productos, y diferencial del comercio exterior."),
+    Document(page_content="Tras el triunfo de la Revolución, al cambiar las relaciones económicas capitalistas a socialistas e instaurarse la propiedad social sobre los medios de producción, prácticamente desaparecen los impuestos."),
+    Document(page_content="El 4 de agosto de 1994 se aprobó la Ley 73 del Sistema Tributario, con el objetivo de recaudar fondos para el Presupuesto Nacional destinados a Seguridad Social, Salud y Educación."),
+    Document(page_content="Desde el 1ro de enero de 2013 se implementó una nueva Ley Tributaria (publicada en Gaceta No. 53 del 21/11/2012), aprobada por la Asamblea Nacional el 23/7/2012."),
+    Document(page_content="Es necesario crear conciencia tributaria en la población, especialmente con el desarrollo del trabajo por cuenta propia y asociaciones con capital extranjero."),
+    Document(page_content="El lineamiento 63 del VI Congreso del Partido plantea: 'Fomentar la cultura tributaria y la responsabilidad social de la población y entidades del país en el cumplimiento de obligaciones tributarias'."),
+    Document(page_content="Se desarrolla un programa metodológico con aplicación móvil usando IA (LLM de software libre) y técnicas como RAG para fomentar la cultura tributaria en jóvenes."),
+    Document(page_content="El programa utiliza Python, LangChain y LangGraph para crear un agente con personalidad mediante técnicas de prompting y protocolo MCP."),
+    Document(page_content="La iniciativa fortalece el área de Atención al Contribuyente y los círculos de interés para formación vocacional desde edades tempranas."),
+    Document(page_content="El Círculo de Interés tributario permite ampliar conocimientos, desarrollar habilidades y formar inclinaciones profesionales vinculadas a la Administración Tributaria.")
+
 ]
