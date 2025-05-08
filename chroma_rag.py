@@ -96,4 +96,6 @@ initial_documents = [
     Document(page_content="La ONAT ha implementado servicios en línea que permiten a los contribuyentes consultar sus pagos realizados, descargar el Vector Fiscal y realizar consultas directamente desde el Portal Tributario. [Fuente: Instagram ONAT](https://www.instagram.com/onat_cuba/p/DCRaB1KqjOk/)"),
     Document(page_content="El proceso de declaración jurada para el ejercicio fiscal 2024 comienza el 6 de enero y concluye el 30 de abril de 2025. Los productores agropecuarios individuales del sector cañero deben presentar su declaración entre el 1 de julio y el 31 de octubre de 2025. [Fuente: Radio Progreso](https://www.radioprogreso.icrt.cu/onat-anuncia-proceso-de-declaracion-jurada-para-2025/)"),
     Document(page_content="La ONAT ofrece bonificaciones por pronto pago y por el uso de canales digitales. Declarar y pagar antes del 28 de febrero otorga un descuento del 5%, y utilizar canales digitales como Transfermóvil brinda un beneficio adicional del 3%. [Fuente: Artemisa Diario](https://artemisadiario.cu/2025/01/que-debe-saber-de-la-nueva-escala-progresiva-para-la-declaracion-jurada-del-impuesto-sobre-ingresos-personales/)"),
+    Document(page_content="La url del Portal Tributario de la ONAT es : https://www.onat.gob.cu/"),
+
 ]

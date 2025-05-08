@@ -41,12 +41,15 @@ async def retrieve_documents(query: str, k: int):
 async def chat(request: QueryRequest):
     try:
         messages = react_graph_memory.invoke(
-            {"messages": [HumanMessage(content=request.query + ". Mi nombre es: " + request.user_name)]},
+            {"messages": [HumanMessage(content=request.query)]},
             config={"configurable": {"thread_id": request.user_name}}
         )
         messages["user_name"] = request.user_name
+
+        texto = messages["messages"][-1].content
+        parte_deseada = texto.split("\n\n")[-1]
         return {
-            "reply": messages["messages"][-1].content,
+            "reply": parte_deseada,
             "history": messages["messages"]
         }
     except Exception as e:

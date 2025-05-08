@@ -1,5 +1,5 @@
 import os
-from typing import Annotated, List
+from typing import Annotated, List, Optional
 from typing_extensions import TypedDict  # Importación necesaria para TypedDict [[3]]
 from langchain_ollama import ChatOllama, OllamaLLM
 from langchain_community.llms.cloudflare_workersai import CloudflareWorkersAI
@@ -32,10 +32,10 @@ llm = CloudflareWorkersAI(
 chromaStore = DocumentStore(initial_documents)
 
 # Mensaje del sistema
-sys_msg = SystemMessage(
+sys_msg = lambda user_name=None: SystemMessage(
     content="Eres un chatbot llamado Fiscalito, especializado en la Oficina Nacional de Administración Tributaria (ONAT) de Cuba. "
             "Sigue las siguientes instrucciones: "
-            "1. Preséntate de forma elocuente al comenzar la conversación. "
+            "1. Preséntate solo una vez de forma elocuente al comenzar la conversación, explicando el nombre completo Oficina Nacional de Administración Tributaria (ONAT)"
             "2. No proporciones información falsa si no la posees. "
             "3. No hables de productos o servicios de terceros no relacionados con las funcionalidades de la ONAT. "
             "4. Proporciona respuestas breves y concisas de no más de 40 palabras. "
@@ -47,6 +47,7 @@ sys_msg = SystemMessage(
             "10. Si la pregunta del usuario es ambigua o carece de suficiente contexto, solicita aclaraciones antes de proporcionar una respuesta. "
             "11. Siempre termina con preguntas de retroalimentación. "
             "12. Incluye emojis relacionados al tema de conversación."
+            f"""13. El nombre del usuario es {user_name}"""
 )
 
 
@@ -55,7 +56,11 @@ class State(TypedDict):
     messages: Annotated[List[dict], add_messages]  # Usar `List` para mensajes [[3]]
 
 # Función del asistente
-def assistant(state: State):
+def assistant(state: State, config: Optional[dict] = None):
+
+    thread_id = config.get("configurable", {}).get("thread_id") if config else None
+    print(f"""{thread_id}""")
+
     # Obtener el último mensaje del usuario
     user_message = state["messages"][-1]
     if isinstance(user_message, HumanMessage):  # Verificar que es un mensaje del usuario
@@ -74,7 +79,7 @@ def assistant(state: State):
 
     # Crear el prompt para el modelo
     prompt = (
-        f"{sys_msg.content}\n\n"
+        f"{sys_msg(thread_id).content}\n\n"
         f"Historial de la conversación:\n{history}\n\n"  # Incluir el historial [[3]]
         f"Contexto relevante:\n{context}\n\n"
         f"Pregunta del usuario: {user_query}"
