@@ -49,7 +49,7 @@ async def chat(request: QueryRequest):
         texto = messages["messages"][-1].content
         parte_deseada = texto.split("\n\n")[-1]
         return {
-            "reply": parte_deseada,
+            "reply": texto,
             "history": messages["messages"]
         }
     except Exception as e:

@@ -25,7 +25,7 @@ load_dotenv()
 llm = CloudflareWorkersAI(
     account_id=os.getenv("CLOUDFLARE_ACCOUNT_ID"),
     api_token=os.getenv("CLOUDFLARE_API_KEY"),
-    model="@cf/mistralai/mistral-small-3.1-24b-instruct",
+    model="@cf/meta/llama-guard-3-8b",
 )
 
 # Inicializar el almacén de documentos Chroma
