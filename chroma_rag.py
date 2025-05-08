@@ -109,6 +109,24 @@ initial_documents = [
     Document(page_content="Se desarrolla un programa metodológico con aplicación móvil usando IA (LLM de software libre) y técnicas como RAG para fomentar la cultura tributaria en jóvenes."),
     Document(page_content="El programa utiliza Python, LangChain y LangGraph para crear un agente con personalidad mediante técnicas de prompting y protocolo MCP."),
     Document(page_content="La iniciativa fortalece el área de Atención al Contribuyente y los círculos de interés para formación vocacional desde edades tempranas."),
-    Document(page_content="El Círculo de Interés tributario permite ampliar conocimientos, desarrollar habilidades y formar inclinaciones profesionales vinculadas a la Administración Tributaria.")
+    Document(page_content="El Círculo de Interés tributario permite ampliar conocimientos, desarrollar habilidades y formar inclinaciones profesionales vinculadas a la Administración Tributaria."),
+
+
+    Document(page_content="Ejercicio de correspondencia: Historia tributaria institucional cubana - Relaciona cada institución con su año de creación"),
+    Document(page_content="Opciones de fechas:\n"
+                          "A) 1958\n"
+                          "B) 1953 \n"
+                          "C) 1902\n"
+                          "D) 1909"),
+    Document(page_content="Instituciones tributarias:\n"
+                          "1) Instauración de la República e inicio del sistema tributario nacional\n"
+                          "2) Creación del Ministerio de Hacienda (Ley Orgánica del Poder Ejecutivo)\n"
+                          "3) Establecimiento del Tribunal de Cuentas\n"
+                          "4) Constitución formal de las Oficinas Recaudadoras"),
+    Document(page_content="Respuestas correctas:\n"
+                          "1-C) República y sistema tributario → 1902\n"
+                          "2-D) Ministerio de Hacienda → 1909\n"
+                          "3-B) Tribunal de Cuentas → 1953\n"
+                          "4-A) Oficinas Recaudadoras → 1958"),
 
 ]
